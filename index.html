@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doughy Delight | Soft Cookies Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">DD</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#menu">Our Cookies</a></li>
+            <li><a href="#message">Order Now</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 id="welcome-title">Hi Customer, Welcome To Doughy Delight</h1>
+        <p>Freshly baked soft cookies made with premium ingredients and lots of love.</p>
+        <div class="banner">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1000" alt="Banner Soft Cookies">
+        </div>
+    </header>
+
+    <section id="profile">
+        <h2>About Doughy Delight</h2>
+        <div class="profile-content">
+            <p><strong>Doughy Delight</strong> menciptakan <em>soft cookie</em> artisan yang sempurna—renyah di bagian tepi dan lembut lumer di tengahnya.</p>
+            <div class="vision-mission">
+                <div class="vm-box">
+                    <h3>Visi</h3>
+                    <p>Menjadi pelopor kebahagiaan lewat gigitan cookies premium di Indonesia.</p>
+                </div>
+                <div class="vm-box">
+                    <h3>Misi</h3>
+                    <p>Menggunakan bahan organik, inovasi rasa unik, dan pelayanan sepenuh hati.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our Best Sellers</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <div class="img-space">
+                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=500" alt="Classic Choco">
+                </div>
+                <h4>Classic Choco</h4>
+                <p>Cookies vanila lembut dengan Belgian chocolate.</p>
+                <p class="price">Rp 15.000</p>
+                <a href="#message" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <div class="img-space">
+                    <img src="https://images.unsplash.com/photo-1618923850107-d1a234d7a73a?auto=format&fit=crop&w=500" alt="Red Velvet">
+                </div>
+                <h4>Red Velvet</h4>
+                <p>Coklat merah kaya rasa dengan filling cream cheese.</p>
+                <p class="price">Rp 18.000</p>
+                <a href="#message" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <div class="img-space">
+                    <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=500" alt="Matcha">
+                </div>
+                <h4>Matcha Latte</h4>
+                <p>Matcha Jepang premium dengan white chocolate chip.</p>
+                <p class="price">Rp 17.000</p>
+                <a href="#message" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="message">
+        <h2>Ready to Order?</h2>
+        <div class="form-wrapper">
+            <form id="order-form">
+                <label>Full Name</label>
+                <input type="text" id="name-input" placeholder="Siapa nama kamu?" required>
+                
+                <label>Delivery Date</label>
+                <input type="date" id="date-input" required>
+                
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Laki-laki" required> Laki-laki</label>
+                    <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+                </div>
+                
+                <label>Order Details</label>
+                <textarea id="msg-input" rows="4" placeholder="Contoh: 3 Choco, 2 Red Velvet..."></textarea>
+                
+                <button type="submit">Submit Order</button>
+            </form>
+
+            <div class="result-box">
+                <h4>Order Summary</h4>
+                <p><strong>Time:</strong> <span id="current-time">-</span></p>
+                <p><strong>Name:</strong> <span id="res-name">-</span></p>
+                <p><strong>Date:</strong> <span id="res-date">-</span></p>
+                <p><strong>Gender:</strong> <span id="res-gender">-</span></p>
+                <p><strong>Items:</strong> <span id="res-msg">-</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created By RevoU Participant</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
